@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 声明需要注册监控 -->
+    <dubbo:monitor protocol="registry" />
+    
+    <!-- 具体的实现bean -->
+    <bean id="ExtractKeywords" class="casia.ibasic.dubbo.impl.KeyPhraseServiceImpl" />
+	
+    <!-- 提供方应用名称信息，这个相当于起一个名字，我们dubbo管理页面比较清晰是哪个应用暴露出来的 -->
+    <dubbo:application name="provider" owner="Overlord.Y" />
+
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+    <!-- 启动时不检查提供者是否存在,提供者请置为false,如果存在循环依赖则必须置为false才能启动 -->
+    <!-- 启动时注册服务 -->
+    <!-- 启动时不订阅 -->
+     <!--<dubbo:registry address="zookeeper://192.168.10.100:2181" check="false" register="true" subscribe="false" timeout="30000"></dubbo:registry>-->
+    <dubbo:registry address="zookeeper://192.168.10.100:2181?backup=192.168.10.102:2181,192.168.10.101:2181,192.168.10.148:2181,192.168.10.149:2181" check="false" register="true" subscribe="false" timeout="30000" ></dubbo:registry>
+
+    <!-- 用rest协议在9888端口暴露服务,在嵌入式tomcat上，REST的性能比jetty上要好得多 -->
+    <dubbo:protocol name="rest" host="localhost" port="9340" server="netty" accepts="128"/>
+
+
+    <!-- 要暴露的服务接口 -->
+    <dubbo:service interface="casia.ibasic.dubbo.service.KeyWordService"
+        ref="ExtractKeywords" timeout="180000"  group="analysis_group" owner="Overlord.Y"  version="1.0" >
+    </dubbo:service>
+    
+</beans>

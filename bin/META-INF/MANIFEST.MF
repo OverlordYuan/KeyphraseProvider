@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Class-Path: commons-cli-1.1.jar gson-1.3-b2.jar hanlp-portable-1.7.4.j
+ ar commons-collections-3.2.1.jar commons-lang-2.4.jar junit-3.8.1.1.j
+ ar servlet-api.jar velocity-1.6.jar xom.jar base.jar json.jar mail.ja
+ r weka.jar slf4j-api.jar dubbo-2.8.4.jar gson-1.3-b2.jar servlet-api.
+ jar jaws-bin-1.2.jar log4j-1.2.16.jar slf4j-simple.jar velocity-1.6.j
+ ar zkclient-0.1.jar filterbuilder.jar ictclas-2.0.7.jar junit-3.8.1.1
+ .jar proxool-0.9.1.jar activation-1.1.jar commons-io-2.6.jar fastjson
+ -1.2.4.jar httpcore-4.2.1.jar jaxb-api-2.2.7.jar aopalliance-1.0.jar 
+ commons-cli-1.1.jar jaxb-core-2.2.7.jar jaxb-impl-2.2.7.jar json-simp
+ le-1.1.jar slf4j-api-1.6.2.jar zookeeper-3.4.6.jar commons-lang-2.4.j
+ ar commons-pool-1.6.jar httpclient-4.5.2.jar commons-codec-1.6.jar ja
+ ckson-xc-1.9.12.jar lucene-core-2.2.0.jar netty-3.7.0.Final.jar stanf
+ ord-postagger.jar commons-lang3-3.3.1.jar dubbo-rpc-api-2.8.4.jar jav
+ assist-3.15.0-GA.jar opennlp-tools-1.5.3.jar proxool-cglib-0.9.1.jar 
+ slf4j-log4j12-1.6.1.jar dubbo-rpc-rest-2.8.4.jar hanlp-portable-1.7.4
+ .jar jackson-jaxrs-1.9.12.jar opennlp-maxent-3.0.3.jar commons-loggin
+ g-1.1.1.jar jaxrs-api-3.0.7.Final.jar one-jar-ant-task-0.96.jar commo
+ ns-io-2.6-javadoc.jar commons-io-2.6-sources.jar lucene-analyzers-2.2
+ .0.jar jackson-core-asl-1.9.12.jar javax.servlet-api-3.1.0.jar json-s
+ imple-1.1-sources.jar validation-api-1.0.0.GA.jar commons-httpclient-
+ 3.0.1.jar spring-aop-3.1.4.RELEASE.jar spring-asm-3.1.4.RELEASE.jar s
+ pring-web-3.1.4.RELEASE.jar commons-collections-3.2.1.jar dubbo-remot
+ ing-http-2.8.4.jar jackson-mapper-asl-1.9.12.jar spring-core-3.1.4.RE
+ LEASE.jar resteasy-jaxrs-3.0.7.Final.jar resteasy-netty-3.0.7.Final.j
+ ar spring-beans-3.1.4.RELEASE.jar commons-lang3-3.3.1-sources.jar res
+ teasy-client-3.0.7.Final.jar spring-context-3.1.4.RELEASE.jar resteas
+ y-jdk-http-3.0.7.Final.jar dubbo-remoting-zookeeper-2.8.4.jar spring-
+ expression-3.1.4.RELEASE.jar resteasy-jaxb-provider-3.0.7.Final.jar s
+ pring-context-support-3.1.4.RELEASE.jar resteasy-jackson-provider-3.0
+ .7.Final.jar commons-logging-1.1.1.jar proxool-0.9.1.jar commons-http
+ client-3.0.1.jar filterbuilder.jar jaws-bin-1.2.jar mail.jar lucene-a
+ nalyzers-2.2.0.jar stanford-postagger.jar lucene-core-2.2.0.jar log4j
+ -1.2.16.jar one-jar-ant-task-0.96.jar json.jar proxool-cglib-0.9.1.ja
+ r fastjson-1.2.4.jar weka.jar httpclient-4.5.2.jar base.jar
+Main-Class: casia.ibasic.dubbo.run.Provider
+
